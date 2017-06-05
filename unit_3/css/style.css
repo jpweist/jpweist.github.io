@@ -1,0 +1,39 @@
+body {
+	background: url("../images/yas_backgroundusa.jpg") no-repeat;
+font-family: "Avenir Next";
+
+
+}
+
+h1, p {
+	text-align: center;
+	color: #ffffff;
+}
+h1 {
+	font-size: 7em;
+}
+
+p {
+	font-size: 1.3em;
+}
+nav {
+	color: #ffffff;
+
+}
+
+button {
+	margin: 0;
+	color: #3a4097;
+}
+#landingspot{
+	margin-bottom: 500px;
+}
+
+#scrollcontent p {
+	color: #d57332;
+	font-size: 1.6em;
+}
+.dark {
+	color: #3a4097;
+	text-align: left;
+}
