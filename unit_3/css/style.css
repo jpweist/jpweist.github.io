@@ -1,7 +1,7 @@
 body {
 	background: url("../images/yas_backgroundusa.jpg") no-repeat;
 font-family: "Avenir Next";
-
+	font-weight: normal;
 
 }
 
@@ -18,6 +18,7 @@ p {
 }
 nav {
 	color: #ffffff;
+
 
 }
 
@@ -36,4 +37,13 @@ button {
 .dark {
 	color: #3a4097;
 	text-align: left;
+}
+
+
+img {
+	width: : 600px;
+}
+
+.small img {
+	width: 200px;
 }
