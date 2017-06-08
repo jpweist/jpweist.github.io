@@ -1,30 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
 body {
 	background: url("../images/yas_backgroundusa.jpg") no-repeat;
-font-family: "Avenir Next";
-	font-weight: normal;
+	font-family: "Open Sans";
 
 }
 
 h1, p {
-	text-align: center;
+	font-style: bold;
 	color: #ffffff;
 }
 h1 {
 	font-size: 7em;
+	font-weight: 900;
+	text-align: center;
+	letter-spacing: -3px;
 }
 
 p {
 	font-size: 1.3em;
+	font-weight: 300;
 }
-nav {
+nav > a {
 	color: #ffffff;
+	text-decoration: none;
+	word-spacing: 100px; /*cannot adjust spacing for words???*/
+
 
 
 }
+img {
+	width: 600px;
+}
+
 
 button {
 	margin: 0;
 	color: #3a4097;
+}
+
+.dark {
+	color: #3a4097;
+	text-align: left;
+}
+.dark a {
+	color: #3a4097;
+	text-decoration: none;
+	font-weight: 500;
+} 
+
+.small {
+	width: 200px;
+}
+.morestyles > a{	
+	text-decoration: none;
+	color: #ffffff;
+
+}
+.morestyles > a:active {
+	text-decoration: underline;
 }
 #landingspot{
 	margin-bottom: 500px;
@@ -34,16 +68,11 @@ button {
 	color: #d57332;
 	font-size: 1.6em;
 }
-.dark {
-	color: #3a4097;
+#navbar a {
+	word-spacing: 100px; /*cannot adjust spacing for words???*/
+	text-decoration: none;
 	text-align: left;
-}
+	color: #ffffff;
+	word-spacing: 100px;
 
-
-img {
-	width: : 600px;
-}
-
-.small img {
-	width: 200px;
 }
