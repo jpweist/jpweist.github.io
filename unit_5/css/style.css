@@ -1,15 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
 body {
-	background: url("../images/yas_backgroundusa.jpg") no-repeat; 
-	font-family: "Open Sans";
+/*	background: url("../images/yas_backgroundusa.jpg") no-repeat; 
+*/	font-family: "Open Sans";
 }
 
 header {
+    background: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
 }
 
+nav {
+    background: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
 
+aside {
+    background: #FFC675;
+    border: 1px black solid;
+    padding: 20px;
+    float: left;
+    clear: both;
+}
 
+article {
+    background: #E89C6C;
+    border: 1px black solid;
+    padding: 20px;
+    float: right;
+    clear: both;
+}
+footer {
+    background: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+}
+div, section {
+    background: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
 .small {
 	width: 200px;
+}
+.floatright {
+	float: right;
 }
