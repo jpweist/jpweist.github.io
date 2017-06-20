@@ -50,15 +50,19 @@ div, section {
 }
 
 #left { 
-    background-color: #E582A2;
+    background-color: violet;
     border: 1px solid black;
     padding: 20px;
+    float: left;
+    width: 30%;
  }
 
 #right {
-    background-color: #E55B88;
+    background-color: pink;
     border: 1px solid black;
     padding: 20px;
+    float: right;
+    width: 62%;
 }
 
 .small {
@@ -72,8 +76,11 @@ div, section {
     width: 20%;
 }
 
-.clearfix { 
-    overflow: auto;
+.clearfix:after { 
+    visibility: hidden;
+    display: block;
+    font-style: 0;
+    content: " ";
     clear: both;
-    float: left;
+    height: 0;
 }
