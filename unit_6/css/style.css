@@ -22,15 +22,14 @@ aside {
     border: 1px black solid;
     padding: 20px;
     float: left;
-    clear: both;
 }
 
 article {
     background: #E89C6C;
     border: 1px black solid;
     padding: 20px;
-    float: right;
-    clear: both;
+    width: 40%;
+    float: left;
 }
 footer {
     background: #FF957E;
@@ -41,32 +40,34 @@ div, section {
     background: #FFE2B8;
     border: 1px black solid;
     padding: 20px;
+    display: inline-block;
 }
 #tshirt {
 	float: left;
-	clear: both;
+	display: inline-block;
 }
 
 #two_column {
     background-color: #FFB7CF;
     border: 1px solid black;
     padding: 20px;
+    width: 100%;
 }
 
-#left { 
+.left { 
     background-color: violet;
     border: 1px solid black;
     padding: 20px;
     float: left;
-    width: 30%;
+    width: 90%;
  }
 
-#right {
+.right {
     background-color: pink;
     border: 1px solid black;
     padding: 20px;
     float: right;
-    width: 62%;
+    width: 55%;
 }
 
 .small {
@@ -79,7 +80,11 @@ div, section {
     float: left;
     width: 20%;
 }
+.img {
+	max-height: 100%;
+	max-width: 100%;
 
+}
 .clearfix:after { 
     visibility: hidden;
     display: block;
@@ -87,4 +92,7 @@ div, section {
     content: " ";
     clear: both;
     height: 0;
+}
+aside.img {
+	width: 40%;
 }
