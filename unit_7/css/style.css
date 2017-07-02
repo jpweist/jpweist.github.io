@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+body {
+/*	background: url("../images/yas_backgroundusa.jpg") no-repeat; 
+*/	font-family: "Open Sans";
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: no-repeat center center url("../images/yas_backgroundusa.jpg") ;
+    border: none;
+    padding: none;
+    height: auto auto;
+    background-size: 100%;
+}
+h1 {
+    font-weight: 800; 
+    font-size: 8em; 
+    line-height: .5em
+    text: center;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
+
+}
+nav {
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 20px;
+}
+header nav a {
+    text-decoration: none;
+    font-size: 1.7em;
+    color: white;
+    padding-right: 1em;
+
+
+}
+nav a:hover {
+    color: #e3254b;
+    text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
+}
+aside {
+    background: #FFC675;
+    border: 1px black solid;
+    padding: 20px;
+    float: left;
+}
+
+article {
+    background: #E89C6C;
+    border: 1px black solid;
+    padding: 20px;
+    width: 40%;
+    float: left;
+}
+
+div, section {
+    background: #;
+    border: none;
+    padding: 20px;
+    display: ;
+}
+section {
+    border: none;
+    margin: auto 0;
+    text-align: center;
+}
+section p {
+    color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: 1em;
+}
+section a {
+    color: white;
+    text-decoration: none;
+    background-color: #3a4097;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+section a:hover {
+    color: black;
+    background-color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
+
+}
+section .tshirtimages {
+    display: inline-block;
+}
+button {
+    background-color: #3a4097; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.5em;
+    font-weight: 700;bo
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+button:hover {
+    background-color: white;
+    color: #3a4097;
+    box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
+
+
+}
+footer {
+    background: #3a4097;
+    border: none;
+    padding: 20px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    padding-right: 2em;
+}
+footer a:hover {
+    color: #e3254b;
+    text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 
+}
+footer p {
+    color: white;
+}
+#wrapper {
+    padding: none;
+    margin: none;
+}
+#tshirt {
+	float: left;
+	display: block;
+}
+
+#two_column {
+    background-color: #FFB7CF;
+    border: 1px solid black;
+    padding: 20px;
+    width: 100%;
+}
+
+.left { 
+    background-color: violet;
+    border: 1px solid black;
+    padding: 20px;
+    float: left;
+    width: 90%;
+ }
+
+.right {
+    background-color: pink;
+    border: 1px solid black;
+    padding: 20px;
+    float: right;
+    width: 55%;
+}
+
+.small {
+	width: 200px;
+}
+.floatright {
+	float: right;
+}
+.tshirtimages{
+    float: left;
+    width: 20%;
+}
+.img {
+	max-height: 100%;
+	max-width: 100%;
+
+}
+.clearfix:after { 
+    visibility: hidden;
+    display: block;
+    font-style: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+aside.img {
+	width: 40%;
+}
