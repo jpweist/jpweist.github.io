@@ -1,18 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
 /*	background: url("../images/yas_backgroundusa.jpg") no-repeat; 
 */	font-family: "Open Sans";
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 header {
     background: no-repeat center center url("../images/yas_backgroundusa.jpg") ;
     border: none;
     padding: none;
-    height: auto auto;
-    background-size: 100%;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+
+
+}
+header p {
+    color: white;
 }
 h1 {
     font-weight: 800; 
@@ -42,14 +53,12 @@ nav a:hover {
     text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
 }
 aside {
-    background: #FFC675;
     border: 1px black solid;
     padding: 20px;
     float: left;
 }
 
 article {
-    background: #E89C6C;
     border: 1px black solid;
     padding: 20px;
     width: 40%;
@@ -57,9 +66,8 @@ article {
 }
 
 div, section {
-    background: #;
     border: none;
-    padding: 20px;
+    padding: 0;
     display: ;
 }
 section {
@@ -68,7 +76,6 @@ section {
     text-align: center;
 }
 section p {
-    color: white;
     font-size: 1em;
     line-height: 1.5em;
     padding-top: 1em;
@@ -88,8 +95,9 @@ section a:hover {
 
 }
 section .tshirtimages {
-    display: inline-block;
+    display: inline;
 }
+
 button {
     background-color: #3a4097; 
     border: none;
@@ -103,6 +111,7 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10px;
+    z-index: 10;
 
 }
 button:hover {
@@ -134,28 +143,26 @@ footer p {
     margin: none;
 }
 #tshirt {
-	float: left;
 	display: block;
 }
 
 #two_column {
-    background-color: #FFB7CF;
-    border: 1px solid black;
+    border: none;
     padding: 20px;
     width: 100%;
+    margin: auto 0;
 }
 
 .left { 
-    background-color: violet;
-    border: 1px solid black;
+    color: black;
+    border: none;
     padding: 20px;
     float: left;
     width: 90%;
  }
 
 .right {
-    background-color: pink;
-    border: 1px solid black;
+    border: none;
     padding: 20px;
     float: right;
     width: 51%;
@@ -168,13 +175,31 @@ footer p {
 	float: right;
 }
 .tshirtimages{
+    padding: 1%;
     float: left;
-    width: 20%;
+    width: 25%;
+    display: inline;
+    background-color: none;
+}
+
+.tshirtimages :hover {
+
+}
+
+.tshirttext {
+    color: #3a4097;
+    font-weight: 600;
+
 }
 .img {
 	max-height: 100%;
 	max-width: 100%;
 
+}
+.featureitem p {
+    font-weight: 700;
+    font-size: 2em;
+    color: #3a4097;
 }
 .clearfix:after { 
     visibility: hidden;
