@@ -18,7 +18,7 @@ header {
     padding: none;
     width: 100%;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
 
 
 }
@@ -138,6 +138,9 @@ footer a:hover {
 footer p {
     color: white;
 }
+footer p a {
+    padding-right: 0;
+}
 #wrapper {
     padding: none;
     margin: none;
@@ -152,7 +155,14 @@ footer p {
     width: 100%;
     margin: auto 0;
 }
-
+#scrollmore {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+.feature {
+    margin: 10em 0;
+}
 .left { 
     color: black;
     border: none;
