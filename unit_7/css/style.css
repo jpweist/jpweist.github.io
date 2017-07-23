@@ -53,6 +53,9 @@ nav a:hover {
     text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
 }
 aside {
+    background: no-repeat center center url("../images/co_pants_jump.jpg") ;
+    width: auto;
+    height: auto;
     border: 1px black solid;
     padding: 20px;
     float: left;
@@ -121,34 +124,13 @@ section .tshirtimages {
 
 
 }
-.tshirttext {
-    color: white;
-    background-color: #3a4097;
-    text-decoration: none;
-    display: inline-block;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font-size: 1em;
-    font-weight: 500;
-    width: 15em;
-    z-index: 9;
-
-}
-.tshirttext:hover {
-    background-color: white;
-    color: #3a4097;
-    box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
-    font-weight: 500;
-    cursor: pointer;
 
 
-
-}
 footer {
     background: #3a4097;
     border: none;
     padding: 20px;
+    clear: both;
 }
 footer a {
     text-decoration: none;
@@ -178,6 +160,7 @@ footer p a {
     padding: 20px;
     width: 100%;
     margin: auto 0;
+
 }
 
 #scrollmore a{
@@ -214,7 +197,7 @@ footer p a {
 }
 .featuretext {
     font-size: 2.1em;
-    z-index: 2;
+    font-weight: 200;
 }
 .left { 
     color: black;
@@ -229,7 +212,6 @@ footer p a {
     padding: 20px;
     float: right;
     width: 51%;
-    z-index: -1;
 }
 
 .small {
@@ -237,7 +219,56 @@ footer p a {
 }
 .small:hover {
     opacity: 0.5;
+    cursor: pointer;
+
+
 }
+.small:hover~.tshirttext {
+        opacity: .3;
+        color: black;
+/*        box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
+*/      font-weight: 900;
+        cursor: pointer;
+        transition:opacity.5s ease;
+        visibility: visible;
+        background-color: rgba(0,0,0,.30);
+        height: 100%;
+        position: absolute;
+     
+
+}
+
+/*.tshirttext {
+    color: black;
+    opacity: .3;
+    background-image: #3a4097;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 1em;
+    font-weight: 500;
+    width: 15em;
+    height: 5em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    opacity: 0
+}*/
+.tshirttext {
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.tshirttext p {
+    font-weight: 800;
+}
+
 .floatright {
 	float: right;
 }
@@ -247,21 +278,31 @@ footer p a {
     width: 25%;
     display: inline;
     background-color: none;
+    position: relative;
 }
+
 .img {
-	height: 150%;
-	width: 150%;
+    background-image: url("..images/co_pants_jump.jpg");
+	height: 70em;
+	width: 4em;
     z-index: -1;
     margin-left: -20em;
     margin-top: -15em;
 
 
+
 }
-#featureitem p {
+.subfeature {
+    background-color: rgba(188,77,19,.6);
+}
+.freeshipping {
+    text-decoration: none;
+}
+
+#featureitem {
     font-weight: 700;
     font-size: 2em;
     color: #3a4097;
-    z-index: 200;
 }
 .clearfix:after { 
     visibility: hidden;
@@ -274,4 +315,16 @@ footer p a {
 aside.img {
 	width: 40%;
 
+}
+#jimweist img {
+    padding: 4em;
+    width: 20em;
+}
+#jimwweist p {
+    float: right;
+    padding: 4em;
+    clear: both;
+}
+#about {
+    text-align: center;
 }
