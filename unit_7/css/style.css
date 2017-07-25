@@ -53,14 +53,30 @@ nav a:hover {
     text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
 }
 aside {
-    background: no-repeat center center url("../images/co_pants_jump.jpg") ;
-    width: auto;
+/*    background: no-repeat center center url("../images/co_pants_jump.jpg") ;
+*/    width: auto;
     height: auto;
     border: 1px black solid;
     padding: 20px;
     float: left;
 }
 
+#madeline {
+    background: no-repeat center right url("../images/co_pants_jump.jpg") ;
+    padding: 60px;
+}
+
+#madeline .featuretext{
+    max-width: 1000px;
+    padding: 260px 0px;
+    width: 70%;
+    display: inline-block;
+}
+
+#madeline button {
+    width: 20%;
+    display: inline-block;
+}
 article {
     border: none;
     padding: 20px;
@@ -217,25 +233,24 @@ footer p a {
 .small {
 	width: 15em;
 }
-.small:hover {
-    opacity: 0.5;
-    cursor: pointer;
-
-
+.tshirtimages .small, .tshirtimages .tshirttext{
+    transition: .25s;
 }
-.small:hover~.tshirttext {
-        opacity: .3;
-        color: black;
+.tshirtimages:hover .small {
+    opacity: 1;
+    cursor: pointer;
+    filter: brightness(0.5);
+}
+.tshirtimages:hover .tshirttext {
+        opacity: 1;
+       
 /*        box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
-*/      font-weight: 900;
-        cursor: pointer;
-        transition:opacity.5s ease;
+*/   
         visibility: visible;
-        background-color: rgba(0,0,0,.30);
-        height: 100%;
-        position: absolute;
-     
 
+        position: absolute;
+        top: 40%;
+    
 }
 
 /*.tshirttext {
@@ -263,7 +278,10 @@ footer p a {
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
+    color:white;
+    top: 40%;
+       font-weight: 900;
+        cursor: pointer;
 }
 .tshirttext p {
     font-weight: 800;
@@ -316,15 +334,39 @@ aside.img {
 	width: 40%;
 
 }
+#jimweist {
+    background-color: pink;
+    left: 0;
+    right: 0;
+    margin: auto 0;
+}
 #jimweist img {
     padding: 4em;
     width: 20em;
+
 }
+
+#jimweist div {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+} 
 #jimwweist p {
     float: right;
     padding: 4em;
     clear: both;
 }
 #about {
+    padding: 1em;
     text-align: center;
 }
+.w3-center {
+    font-family: "Open Sans";
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+Try it Yourself »
