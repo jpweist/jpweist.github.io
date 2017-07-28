@@ -63,11 +63,15 @@ aside {
 
 #madeline {
     background: no-repeat center right url("../images/co_pants_jump.jpg") ;
+    background-size: 800px auto;
     padding: 60px;
+    margin: 3em;
+    clear: left;
+
 }
 
 #madeline .featuretext{
-    max-width: 1000px;
+    max-width: 1250px;
     padding: 260px 0px;
     width: 70%;
     display: inline-block;
@@ -76,7 +80,29 @@ aside {
 #madeline button {
     width: 20%;
     display: inline-block;
+
+    background-color: #3a4097; 
+    border: none;
+    color: white;
+    padding: 0.6em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 1em;
+    z-index: 10;
+
 }
+#madeline button:hover {
+    background-color: white;
+    color: #3a4097;
+    box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
+
+}
+
 article {
     border: none;
     padding: 20px;
@@ -117,7 +143,7 @@ section .tshirtimages {
     display: inline;
 }
 
-.big {
+ .big {
     background-color: #3a4097; 
     border: none;
     color: white;
@@ -133,7 +159,7 @@ section .tshirtimages {
     z-index: 10;
 
 }
-.big:hover {
+.big:hover  {
     background-color: white;
     color: #3a4097;
     box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
@@ -142,27 +168,7 @@ section .tshirtimages {
 }
 
 
-footer {
-    background: #3a4097;
-    border: none;
-    padding: 20px;
-    clear: both;
-}
-footer a {
-    text-decoration: none;
-    color: white;
-    padding-right: 2em;
-}
-footer a:hover {
-    color: #e3254b;
-    text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 
-}
-footer p {
-    color: white;
-}
-footer p a {
-    padding-right: 0;
-}
+
 #wrapper {
     padding: none;
     margin: none;
@@ -334,39 +340,197 @@ aside.img {
 	width: 40%;
 
 }
-#jimweist {
-    background-color: pink;
+.jimweist {
     left: 0;
     right: 0;
     margin: auto 0;
+    text-align: left;
 }
-#jimweist img {
-    padding: 4em;
-    width: 20em;
+.jimweist img {
+    padding: 0;
+    width: 13em;
+    float: left;
+    margin-left: 15em;
+    margin-bottom: 1.2em;
+    padding-right: 1em;
+}
 
 }
 
-#jimweist div {
+.jimweist div {
     width: 49%;
     display: inline-block;
     vertical-align: top;
 } 
-#jimwweist p {
-    float: right;
-    padding: 4em;
-    clear: both;
+.jimwweist p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding-top: 4em;
+    text-align: left;
+    margin-left: 1em;
+}
+.jimweist p a {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+
+}
+.jimweist p a:hover {
+    color: #f23655;
+    text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
+
 }
 #about {
     padding: 1em;
+    /* margin-left: 5px; */
     text-align: center;
+    float: left;
+    width: 54%;
+}
 }
 .w3-center {
     font-family: "Open Sans";
 }
 
-@media only screen and (max-width: 500px) {
-    body {
-        background-color: lightblue;
-    }
+footer {
+    background: #3a4097;
+    border: none;
+    padding: 20px;
+    clear: both;
+    text-align: left;
+
 }
-Try it Yourself »
+footer a {
+    text-decoration: none;
+    color: white;
+    padding-right: 2em;
+}
+footer a:hover {
+    color: #e3254b;
+    text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 
+    background-color: none;
+
+}
+footer p {
+    color: white;
+}
+footer p a {
+    padding-right: 0;
+}
+
+.footer a:hover{
+    background-color: #3a4097;
+}
+@media only screen and (max-width: 1000px) { 
+
+    header {
+            top: 0;
+            left: 0
+ 
+
+            background: no-repeat center center url("../images/yas_backgroundusa.jpg") ;
+            border: none;
+            padding: none;
+            padding-bottom: 1em;
+            width: 100%;
+            background-size: cover;
+            height: 40vh;
+    }
+    
+    header nav a {
+        font-size: 1.1em;
+        display: inline-block;
+        width: 100%;
+        background-color: rgba();
+    }
+    header h1 {
+        font-size: 3em;
+    }
+    header nav {
+        padding: 1em 0 0 1em;
+        margin: 0;
+    }
+    .feature {
+        margin: .5m;
+    }
+    .big {
+        background-color: #3a4097; 
+        border: none;
+        color: white;
+        padding: 0.4em .8em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.2em;
+        font-weight: 700;
+        margin: 3px 1.5px;
+        cursor: pointer;
+        border-radius: 5px;
+
+     }
+    .big:hover  {
+        background-color: white;
+        color: #3a4097;
+        box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
+     }
+     #scrollmore a{
+        
+        font-size: .6em;
+
+    }
+    #tshirt {
+        display: block;
+        margin-top: 4em;
+    }
+    .tshirtimages {
+        width: 44%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .featuretext {
+        font-size: 1.5em;
+        width: 80%;
+    }
+    .small {
+        width: 100%;
+        margin-bottom: 1em;
+        padding-right: 1em;
+    }
+    
+    #madeline {
+        background-size: 100%;
+        padding: 13em 0 0 0;
+        margin: 0;
+    }
+     
+    #madeline {
+        background-position-x: 50%;
+        background-position-y: -22%;
+
+        font-size: 1em;
+    }
+    #madeline .featuretext {
+        padding: 0 0 0 0;
+        height: 8em;
+        width: 80%;
+        text-align: left;
+        margin: -189px 0 21em 0;
+        top: 0;
+    }
+    #madeline button {
+        font-size: 1em;
+        text-align: center;
+        width: 80%;
+        padding: .5em;
+        margin-top: .5em;
+    }
+    .featuretext p{
+        font-size: 1em;
+        padding: 0 0 0 0;
+    }
+    .featuretext {
+        margin-bottom: 2em;
+    }
+
+}
