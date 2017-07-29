@@ -429,7 +429,7 @@ footer p a {
 .footer a:hover{
     background-color: #3a4097;
 }
-@media only screen and (max-width: 1000px) { 
+@media only screen and (max-width: 1000px) { /*// media */
 
     header {
             top: 0;
@@ -452,14 +452,22 @@ footer p a {
         background-color: rgba();
     }
     header h1 {
-        font-size: 3em;
+        font-size: 2.2em;
     }
     header nav {
         padding: 1em 0 0 1em;
         margin: 0;
     }
+
+    section .nav-tagline {
+        padding-left:6.5em;
+        padding-right: 6.5em;
+        font-size: .7em;
+
+    }
+
     .feature {
-        margin: .5m;
+        margin: .5em;
     }
     .big {
         background-color: #3a4097; 
@@ -469,7 +477,7 @@ footer p a {
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: 700;
         margin: 3px 1.5px;
         cursor: pointer;
@@ -481,15 +489,22 @@ footer p a {
         color: #3a4097;
         box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
      }
-     #scrollmore a{
-        
+     #scrollmore a {
         font-size: .6em;
-
+        color: white;
+        position: absolute;
+        bottom: 402px;
+        left: 8px;
+        background-color: #f23655;
+        border-radius: .25em 0;
+        padding: .25em;
     }
     #tshirt {
         display: block;
-        margin-top: 4em;
+        margin-top: .5em;
+        width: 118%;
     }
+
     .tshirtimages {
         width: 44%;
         padding: 0;
@@ -497,9 +512,11 @@ footer p a {
     }
 
     .featuretext {
-        font-size: 1.5em;
-        width: 80%;
+
+        font-size: 1.2em;
+        width: 75%;
     }
+    
     .small {
         width: 100%;
         margin-bottom: 1em;
@@ -512,33 +529,98 @@ footer p a {
         margin: 0;
     }
      
-    #madeline {
+    #madeline {       
         background-position-x: 50%;
         background-position-y: -22%;
-
-        font-size: 1em;
+        padding-bottom: 22px;
+        padding-top: 3px;
+        width: 400px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 648px;
+        margin-top: -1px;
+        margin-bottom: 15px;
     }
     #madeline .featuretext {
         padding: 0 0 0 0;
         height: 8em;
         width: 80%;
         text-align: left;
-        margin: -189px 0 21em 0;
-        top: 0;
+/*        margin: -189px 0 21em 0;
+*/        top: 0;
+        font-size: 1.05em;
+
+
     }
     #madeline button {
         font-size: 1em;
         text-align: center;
-        width: 80%;
+        width: 43%;
         padding: .5em;
-        margin-top: .5em;
+        margin-top: 10.5em;
     }
     .featuretext p{
-        font-size: 1em;
+        font-size: .71em;
         padding: 0 0 0 0;
     }
+
     .featuretext {
         margin-bottom: 2em;
     }
-
+    #about {
+        padding: 0;
+        margin-top: 1em;
+        margin-bottom: .8em;
+    }
+    .jimweist {
+        padding: 0;
+        margin: 0;
+    }
+    .jimweist img {
+        margin: 0;
+        width: 45%;
+    }
+    .jimweist p {
+        font-size: .8em;
+        padding-top: 3em;
+        padding-right: 1em;
+    }
+     .footer p{
+        padding: .5em;
+    }
+    footer {
+        text-align: center;
+    }
+    .small, .tshirttext {
+        padding: 0;
+        margin: 0;
+        font-size: .9em;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
