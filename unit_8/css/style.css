@@ -53,9 +53,61 @@ nav a:hover {
     text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
 }
 aside {
+/*    background: no-repeat center center url("../images/co_pants_jump.jpg") ;
+*/    width: auto;
+    height: auto;
     border: 1px black solid;
     padding: 20px;
     float: left;
+}
+
+#madeline {
+    background: no-repeat center right url(../images/co_pants_jump.jpg);
+    background-size: 1100px auto;
+    padding: 0;
+    margin: 0;
+    /*background-position-x: 49em;
+    background-position-y: -17em;*/
+    padding-bottom: 50em;
+    height: 1650px;
+    clear: left;
+
+
+}
+
+#madeline .featuretext{
+    max-width: 1250px;
+    /* padding: 13px; */
+    width: 95%;
+    padding-bottom: 17em;
+    display: inline-block;
+    text-align: left;
+}
+
+#madeline button {
+    width: 35%;
+    display: inline-block;
+
+    background-color: #3a4097; 
+    border: none;
+    color: white;
+    padding: 0.6em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 1em;
+    z-index: 10;
+
+}
+#madeline button:hover {
+    background-color: white;
+    color: #3a4097;
+    box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
+
 }
 
 article {
@@ -98,7 +150,7 @@ section .tshirtimages {
     display: inline;
 }
 
-.big {
+ .big {
     background-color: #3a4097; 
     border: none;
     color: white;
@@ -114,57 +166,16 @@ section .tshirtimages {
     z-index: 10;
 
 }
-.big:hover {
+.big:hover  {
     background-color: white;
     color: #3a4097;
     box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
 
 
 }
-.tshirttext {
-    color: white;
-    background-color: #3a4097;
-    text-decoration: none;
-    display: inline-block;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font-size: 1em;
-    font-weight: 500;
-    width: 15em;
-    z-index: 9;
-
-}
-.tshirttext:hover {
-    background-color: white;
-    color: #3a4097;
-    box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
-    font-weight: 500;
-    cursor: pointer;
 
 
 
-}
-footer {
-    background: #3a4097;
-    border: none;
-    padding: 20px;
-}
-footer a {
-    text-decoration: none;
-    color: white;
-    padding-right: 2em;
-}
-footer a:hover {
-    color: #e3254b;
-    text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 
-}
-footer p {
-    color: white;
-}
-footer p a {
-    padding-right: 0;
-}
 #wrapper {
     padding: none;
     margin: none;
@@ -178,6 +189,7 @@ footer p a {
     padding: 20px;
     width: 100%;
     margin: auto 0;
+
 }
 
 #scrollmore a{
@@ -214,7 +226,7 @@ footer p a {
 }
 .featuretext {
     font-size: 2.1em;
-    z-index: 2;
+    font-weight: 200;
 }
 .left { 
     color: black;
@@ -229,15 +241,65 @@ footer p a {
     padding: 20px;
     float: right;
     width: 51%;
-    z-index: -1;
 }
 
 .small {
-	width: 15em;
+	width: 100%;
 }
-.small:hover {
-    opacity: 0.5;
+.tshirtimages .small, .tshirtimages .tshirttext{
+    transition: .25s;
 }
+.tshirtimages:hover .small {
+    opacity: 1;
+    cursor: pointer;
+    filter: brightness(0.5);
+}
+.tshirtimages:hover .tshirttext {
+        opacity: 1;
+       
+/*        box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
+*/   
+        visibility: visible;
+
+        position: absolute;
+        top: 40%;
+    
+}
+
+/*.tshirttext {
+    color: black;
+    opacity: .3;
+    background-image: #3a4097;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 1em;
+    font-weight: 500;
+    width: 15em;
+    height: 5em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    opacity: 0
+}*/
+.tshirttext {
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color:white;
+    top: 40%;
+       font-weight: 900;
+        cursor: pointer;
+}
+.tshirttext p {
+    font-weight: 800;
+}
+
 .floatright {
 	float: right;
 }
@@ -247,21 +309,31 @@ footer p a {
     width: 25%;
     display: inline;
     background-color: none;
+    position: relative;
 }
+
 .img {
-	height: 150%;
-	width: 150%;
+    background-image: url("..images/co_pants_jump.jpg");
+	height: 70em;
+	width: 4em;
     z-index: -1;
     margin-left: -20em;
     margin-top: -15em;
 
 
+
 }
-#featureitem p {
+.subfeature {
+    background-color: rgba(188,77,19,.6);
+}
+.freeshipping {
+    text-decoration: none;
+}
+
+#featureitem {
     font-weight: 700;
     font-size: 2em;
     color: #3a4097;
-    z-index: 200;
 }
 .clearfix:after { 
     visibility: hidden;
@@ -275,3 +347,292 @@ aside.img {
 	width: 40%;
 
 }
+#about {
+    padding: 0;
+    margin: 0;
+    /* margin-left: 5px; */
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding-bottom: 1em;
+    
+}
+.jimweist {
+    left: 0;
+    right: 0;
+    margin: auto 0;
+    font-size: 1.3em;
+    text-align: left;
+
+    padding-right: 10px;
+    margin-right: 89px;
+
+}
+.jimweist img {
+    padding: 0;
+    width: 13em;
+    float: left;
+    margin-left: 10em;
+    margin-bottom: 1.2em;
+    padding-right: 1em;
+    margin-top: 1em;
+}
+
+}
+
+.jimweist div {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+} 
+.jimwweist p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding-top: 4em;
+    text-align: left;
+    margin-left: 1em;
+    margin-top: 3em;
+    width: 40%;
+}
+.jimweist p a {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+
+}
+.jimweist p a:hover {
+    color: #f23655;
+    text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
+
+}
+
+}
+.w3-center {
+    font-family: "Open Sans";
+}
+
+footer {
+    background: #3a4097;
+    border: none;
+    padding: 20px;
+    clear: both;
+    text-align: left;
+
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    padding-right: 2em;
+}
+footer a:hover {
+    color: #e3254b;
+    text-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 
+    background-color: none;
+
+}
+footer p {
+    color: white;
+}
+footer nav, p, a {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.footer a:hover{
+    background-color: #3a4097;
+}
+@media only screen and (max-width: 1000px) { /*// media */
+
+    header {
+            top: 0;
+            left: 0
+ 
+
+            background: no-repeat center center url("../images/yas_backgroundusa.jpg") ;
+            border: none;
+            padding: none;
+            padding-bottom: 1em;
+            width: 100%;
+            background-size: cover;
+            height: 40vh;
+    }
+    
+    header nav a {
+        font-size: 1.1em;
+        display: inline-block;
+        width: 100%;
+        background-color: rgba();
+    }
+    header h1 {
+        font-size: 2.2em;
+    }
+    header nav {
+        padding: 1em 0 0 1em;
+        margin: 0;
+    }
+
+    section .nav-tagline {
+        padding-left:6.5em;
+        padding-right: 6.5em;
+        font-size: .7em;
+
+    }
+
+    .feature {
+        margin: .5em;
+    }
+    .big {
+        background-color: #3a4097; 
+        border: none;
+        color: white;
+        padding: 0.4em .8em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.1em;
+        font-weight: 700;
+        margin: 3px 1.5px;
+        cursor: pointer;
+        border-radius: 5px;
+
+     }
+    .big:hover  {
+        background-color: white;
+        color: #3a4097;
+        box-shadow: 1px 1px 2px black, 0 0 1.9em #3a4097, 0 0 0.5em #3a4097;
+     }
+     #scrollmore a {
+        font-size: .6em;
+        color: white;
+        position: absolute;
+        bottom: 402px;
+        left: 8px;
+        background-color: #f23655;
+        border-radius: .25em 0;
+        padding: .25em;
+    }
+    #tshirt {
+        display: block;
+        margin-top: .5em;
+        width: 118%;
+    }
+
+    .tshirtimages {
+        width: 44%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .featuretext {
+
+        font-size: 1.2em;
+        width: 75%;
+    }
+    
+    .small {
+        width: 100%;
+        margin-bottom: 1em;
+        padding-right: 1em;
+    }
+    
+    #madeline {
+        background-size: 100%;
+        padding: 13em 0 0 0;
+        margin: 0;
+    }
+     
+    #madeline {       
+        background-position-x: 50%;
+        background-position-y: -22%;
+        padding-bottom: 22px;
+        padding-top: 3px;
+        width: 400px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 648px;
+        margin-top: -1px;
+        margin-bottom: 15px;
+    }
+    #madeline .featuretext {
+        padding: 0 0 0 0;
+        height: 8em;
+        width: 80%;
+        text-align: left;
+/*        margin: -189px 0 21em 0;
+*/        top: 0;
+        font-size: 1.05em;
+
+
+    }
+    #madeline button {
+        font-size: 1em;
+        text-align: center;
+        width: 43%;
+        padding: .5em;
+        margin-top: 10.5em;
+    }
+    .featuretext p{
+        font-size: .71em;
+        padding: 0 0 0 0;
+    }
+
+    .featuretext {
+        margin-bottom: 2em;
+    }
+    #about {
+        padding: 0;
+        margin-top: 1em;
+        margin-bottom: .8em;
+    }
+    .jimweist {
+        padding: 0;
+        margin: 0;
+    }
+    .jimweist img {
+        margin: 0;
+        width: 45%;
+    }
+    .jimweist p {
+        font-size: .8em;
+        padding-top: 3em;
+        padding-right: 1em;
+    }
+     .footer p{
+        padding: .5em;
+    }
+    footer {
+        text-align: center;
+    }
+    .small, .tshirttext {
+        padding: 0;
+        margin: 0;
+        font-size: .9em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
