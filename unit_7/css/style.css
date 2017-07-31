@@ -10,6 +10,7 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
+    font-size: 2em;
 }
 
 header {
@@ -127,11 +128,7 @@ section {
     margin: auto 0;
     text-align: center;
 }
-section p {
-    font-size: 1em;
-    line-height: 1.5em;
-    padding-top: 1em;
-}
+
 section a {
     color: white;
     text-decoration: none;
@@ -441,7 +438,12 @@ footer nav, p, a {
 .footer a:hover{
     background-color: #3a4097;
 }
-@media only screen and (max-width: 1000px) { /*// media */
+
+.feature p {
+    font-size: 1.9em;
+    
+}
+@media only screen and (max-width: 800px) { /*// media */
 
     header {
             top: 0;
@@ -471,13 +473,15 @@ footer nav, p, a {
         margin: 0;
     }
 
-    section .nav-tagline {
+    html body .nav-tagline p{
         padding-left:6.5em;
         padding-right: 6.5em;
         font-size: .7em;
 
     }
-
+    .nav-tagline {
+        font-size: 2em;
+    }
     .feature {
         margin: .5em;
     }
